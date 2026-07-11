@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=11" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=0.875, shrink-to-fit=yes"
+        />
+        <meta
+            name="description"
+            content="A project built using plain HTML, Tailwind CSS, and JavaScript. This cafe minisite is only a school project."
+        />
+        <title>KapeTan</title>
+
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:description"
+            content="A project built using plain HTML, Tailwind CSS, and JavaScript. This cafe minisite is only a school project."
+        />
+
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap");
+
+            body,
+            html {
+                font-family: "Sora", sans-serif;
+                overflow: auto !important;
+            }
+        </style>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+        <script
+            src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"
+            defer
+        ></script>
+        <script src="https://cdn.tailwindcss.com/"></script>
+        <noscript
+            >Your browser does not support JavaScript, page would not work
+            properly!</noscript
+        >
+    </head>
+    <body class="bg-white">
+        <div
+            class="bg-amber-900 px-5 py-2 text-center text-xs font-semibold tracking-wide text-white"
+        >
+            this is a demonstration website, no functions are working as of now
+            and we don't plan on implementing it.
+        </div>
+
+        <header class="sticky top-0 z-40 bg-amber-100/95 backdrop-blur-xl">
+            <nav
+                class="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-4 sm:px-8 lg:px-10"
+            >
+                <a
+                    href="#top"
+                    class="transition flex shrink-0 items-center gap-3 text-amber-800/70 hover:text-amber-900"
+                >
+                    <span class="font-display text-xl font-bold tracking-tight"
+                        >kapetan</span
+                    >
+                </a>
+
+                <div
+                    class="hidden items-center gap-7 text-sm font-semibold text-amber-800/70 md:flex"
+                >
+                    <a class="transition hover:text-amber-900" href="./menu/"
+                        >menu</a
+                    >
+                    <a class="transition hover:text-amber-900" href="./gallery/"
+                        >gallery</a
+                    >
+                    <a class="transition hover:text-amber-900" href="./about/"
+                        >about</a
+                    >
+                </div>
+
+                <div
+                    class="flex items-center gap-2 text-sm font-semibold text-amber-800/70"
+                >
+                    <a class="transition hover:text-amber-900" href="./login/"
+                        >login</a
+                    >
+                </div>
+            </nav>
+        </header>
+
+        <main class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-28">
+            <div class="grid items-center gap-12 lg:grid-cols-2">
+                <!-- Left Content -->
+                <div class="text-center lg:text-left">
+                    <h1
+                        class="mt-6 text-5xl font-extrabold tracking-tight text-amber-950 sm:text-6xl"
+                    >
+                        latest brews
+                        <span class="block text-amber-600">start here.</span>
+                    </h1>
+
+                    <p class="mt-6 max-w-xl text-lg leading-2 text-stone-600">
+                        we're passionate about coffee, and we're passionate
+                        about doing things differently. our sophisticated
+                        process preserves bold aromas and rich flavors, giving
+                        every cup an unforgettable experience.
+                    </p>
+
+                    <div
+                        class="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start"
+                    >
+                        <a
+                            href="./menu/"
+                            class="rounded-full bg-amber-700 px-8 py-3 font-semibold text-white transition hover:bg-amber-800"
+                        >
+                            explore menu
+                        </a>
+
+                        <a
+                            href="./about/"
+                            class="rounded-full border border-amber-700 px-8 py-3 font-semibold text-amber-700 transition hover:bg-amber-100"
+                        >
+                            more about us
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="relative">
+                    <div class="absolute -inset-4 rounded-3xl"></div>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1447933601403-0c6688de566e"
+                        alt="Fresh Coffee"
+                        class="relative w-full rounded-3xl object-cover shadow-2xl"
+                    />
+                </div>
+            </div>
+        </main>
+
+        <section class="bg-amber-900 py-20">
+            <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+                <!-- Section Header -->
+                <div class="mx-auto max-w-4xl text-center">
+                    <h2
+                        class="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl"
+                    >
+                        free faves are at your fingertips
+                    </h2>
+
+                    <p class="mt-6 text-lg leading-2 text-amber-100">
+                        customers are always in good hands. from espresso
+                        machines, premium coffee beans, flavored syrups, and
+                        dependable after-sales service, we're here for every cup
+                        you brew.
+                    </p>
+                </div>
+
+                <!-- Gallery -->
+                <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="overflow-hidden rounded-3xl shadow-xl">
+                        <img
+                            src="https://plus.unsplash.com/premium_photo-1677661620514-aec974a9876c"
+                            alt="Coffee beans"
+                            class="h-80 w-full object-cover transition duration-500 hover:scale-110"
+                        />
+                    </div>
+
+                    <div class="overflow-hidden rounded-3xl shadow-xl">
+                        <img
+                            src="https://images.unsplash.com/photo-1541167760496-1628856ab772"
+                            alt="Coffee brewing"
+                            class="h-80 w-full object-cover transition duration-500 hover:scale-110"
+                        />
+                    </div>
+
+                    <div
+                        class="overflow-hidden rounded-3xl shadow-xl sm:col-span-2 lg:col-span-1"
+                    >
+                        <img
+                            src="https://images.unsplash.com/photo-1610632380989-680fe40816c6"
+                            alt="Fresh coffee"
+                            class="h-80 w-full object-cover transition duration-500 hover:scale-110"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="border-t border-amber-200 bg-stone-50">
+            <div
+                class="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:px-8 md:grid-cols-3 lg:px-10"
+            >
+                <div class="pr-24">
+                    <a
+                        href="#top"
+                        class="flex items-center gap-3 text-amber-900"
+                    >
+                        <span class="text-xl font-bold tracking-tight">
+                            kapetan
+                        </span>
+                    </a>
+
+                    <p class="mt-5 max-w-sm leading-7 text-stone-600">
+                        serving freshly brewed coffee, handcrafted drinks, and
+                        café favorites for every coffee lover.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-amber-900">explore</h3>
+
+                    <div class="mt-4 space-y-3 text-sm text-stone-600">
+                        <a
+                            class="block transition hover:text-amber-700"
+                            href="./menu/"
+                        >
+                            menu
+                        </a>
+
+                        <a
+                            class="block transition hover:text-amber-700"
+                            href="./gallery/"
+                        >
+                            gallery
+                        </a>
+
+                        <a
+                            class="block transition hover:text-amber-700"
+                            href="./about/"
+                        >
+                            about us
+                        </a>
+
+                        <a
+                            class="block transition hover:text-amber-700"
+                            href="./login/"
+                        >
+                            login
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-amber-900">contact us</h3>
+
+                    <div
+                        class="mt-4 space-y-3 text-sm leading-6 text-stone-600"
+                    >
+                        <p>manila, philippines</p>
+
+                        <p>
+                            everyday (excluding holidays)<br />
+                            6:00 am to 9:00 pm
+                        </p>
+
+                        <p>(+63) 912 345 6789</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-amber-200 bg-amber-100">
+                <div
+                    class="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-sm text-amber-900 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10"
+                >
+                    <p>
+                        © 2026 <span class="font-semibold">kapeTan</span>. all
+                        rights reserved.
+                    </p>
+
+                    <p>a project of bsit wma - tw01 ☕</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
