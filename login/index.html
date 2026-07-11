@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=0.875, shrink-to-fit=yes"
+    />
+    <meta
+      name="description"
+      content="A project built using plain HTML, Tailwind CSS, and JavaScript. This cafe minisite is only a school project."
+    />
+    <title>KapeTan</title>
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="A project built using plain HTML, Tailwind CSS, and JavaScript. This cafe minisite is only a school project."
+    />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+
+      body,
+      html {
+        font-family: 'Sora', sans-serif;
+        overflow: auto !important;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"
+      defer
+    ></script>
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <noscript
+      >Your browser does not support JavaScript, page would not work
+      properly!</noscript
+    >
+  </head>
+  <body class="bg-white">
+    <div
+      class="bg-amber-900 px-5 py-2 text-center text-xs font-semibold tracking-wide text-white"
+    >
+      this is a demonstration website, no functions are working as of now and we
+      don't plan on implementing it.
+    </div>
+
+    <section class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-24">
+  <div class="grid items-center gap-16 lg:grid-cols-2">
+
+    <!-- Left Content -->
+    <div>
+
+      <a
+        href="javascript:history.back()"
+        class="inline-flex items-center text-amber-700 font-semibold hover:text-amber-800 transition">
+        ← Go back
+      </a>
+
+      <h1
+        class="mt-8 text-5xl font-extrabold tracking-tight text-amber-950 sm:text-6xl">
+        Welcome Back
+      </h1>
+
+      <p class="mt-6 text-lg text-stone-600">
+        Sign in to manage your account, browse your orders, and continue
+        enjoying your favorite coffee.
+      </p>
+
+      <!-- Alert (hidden by default) -->
+      <div
+        id="message"
+        class="hidden mt-8 rounded-2xl bg-amber-100 border border-amber-300 p-5">
+
+        <p
+          id="message-text"
+          class="font-semibold text-amber-900">
+        </p>
+
+      </div>
+
+      <!-- Login Card -->
+      <div class="mt-10 rounded-3xl bg-white p-8 shadow-2xl">
+
+        <form action="/login" method="POST" class="space-y-6">
+
+          <div>
+
+            <label
+              for="email"
+              class="block text-sm font-semibold text-amber-950">
+              Email Address
+            </label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              class="mt-2 w-full rounded-xl border border-stone-300 px-4 py-3 focus:border-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-600">
+
+          </div>
+
+          <div>
+
+            <label
+              for="password"
+              class="block text-sm font-semibold text-amber-950">
+              Password
+            </label>
+
+            <input
+              id="password"
+              name="password"
+              type="password"
+              required
+              class="mt-2 w-full rounded-xl border border-stone-300 px-4 py-3 focus:border-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-600">
+
+          </div>
+
+          <button
+            type="submit"
+            class="w-full rounded-full bg-amber-700 px-8 py-3 font-semibold text-white transition hover:bg-amber-800">
+
+            Sign In
+
+          </button>
+
+        </form>
+
+        <div class="mt-8 border-t pt-6 text-center">
+
+          <p class="text-stone-600">
+
+            Don't have an account?
+
+            <a
+              href="/register"
+              class="font-semibold text-amber-700 hover:text-amber-800">
+
+              Create one here
+
+            </a>
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Right Image -->
+    <div class="relative">
+
+      <img
+        src="/static/images/coffee_00001.jpg"
+        alt="Coffee"
+        class="h-[600px] w-full rounded-3xl object-cover shadow-2xl">
+
+    </div>
+
+  </div>
+</section>
+
+    <footer class="bg-stone-50">
+      <div
+        class="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:px-8 md:grid-cols-3 lg:px-10"
+      >
+        <div class="pr-24">
+          <a href="../" class="flex items-center gap-3 text-amber-900">
+            <span class="text-xl font-bold tracking-tight"> kapetan </span>
+          </a>
+
+          <p class="mt-5 max-w-sm leading-7 text-stone-600">
+            serving freshly brewed coffee, handcrafted drinks, and café
+            favorites for every coffee lover.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-amber-900">explore</h3>
+
+          <div class="mt-4 space-y-3 text-sm text-stone-600">
+            <a class="block transition hover:text-amber-700" href="./">
+              menu
+            </a>
+
+            <a class="block transition hover:text-amber-700" href="../gallery/">
+              gallery
+            </a>
+
+            <a class="block transition hover:text-amber-700" href="../about/">
+              about us
+            </a>
+
+            <a class="block transition hover:text-amber-700" href="../login/">
+              login
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-amber-900">contact us</h3>
+
+          <div class="mt-4 space-y-3 text-sm leading-6 text-stone-600">
+            <p>manila, philippines</p>
+
+            <p>
+              everyday (excluding holidays)<br />
+              6:00 am to 9:00 pm
+            </p>
+
+            <p>(+63) 912 345 6789</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-amber-200 bg-amber-100">
+        <div
+          class="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-sm text-amber-900 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10"
+        >
+          <p>
+            © 2026 <span class="font-semibold">kapeTan</span>. all rights
+            reserved.
+          </p>
+
+          <p>a project of bsit wma - tw01 ☕</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
