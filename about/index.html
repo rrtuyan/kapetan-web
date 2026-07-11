@@ -1,321 +1,381 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=11" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=0.875, shrink-to-fit=yes"
-    />
-    <meta
-      name="description"
-      content="A project built using plain HTML, Tailwind CSS, and JavaScript. This cafe minisite is only a school project."
-    />
-    <title>About Us | KapeTan</title>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=11" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=0.875, shrink-to-fit=yes"
+        />
+        <meta
+            name="description"
+            content="A project built using plain HTML, Tailwind CSS, and JavaScript. This cafe minisite is only a school project."
+        />
+        <title>About Us | KapeTan</title>
 
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:description"
-      content="A project built using plain HTML, Tailwind CSS, and JavaScript. This cafe minisite is only a school project."
-    />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:description"
+            content="A project built using plain HTML, Tailwind CSS, and JavaScript. This cafe minisite is only a school project."
+        />
 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap");
 
-      body,
-      html {
-        font-family: 'Sora', sans-serif;
-        overflow: auto !important;
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+            body,
+            html {
+                font-family: "Sora", sans-serif;
+                overflow: auto !important;
+            }
+        </style>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-    <script
-      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"
-      defer
-    ></script>
-    <script src="https://cdn.tailwindcss.com/"></script>
-    <noscript
-      >Your browser does not support JavaScript, page would not work
-      properly!</noscript
-    >
-  </head>
-  <body class="bg-white">
-    <div
-      class="bg-amber-900 px-5 py-2 text-center text-xs font-semibold tracking-wide text-white"
-    >
-      this is a demonstration website, no functions are working as of now and we
-      don't plan on implementing it.
-    </div>
-
-    <header class="sticky top-0 z-40 bg-amber-100/95 backdrop-blur-xl">
-      <nav
-        class="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-4 sm:px-8 lg:px-10"
-      >
-        <a
-          href="../#top"
-          class="transition flex shrink-0 items-center gap-3 text-amber-800/70 hover:text-amber-900"
+        <script
+            src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"
+            defer
+        ></script>
+        <script src="https://cdn.tailwindcss.com/"></script>
+        <noscript
+            >Your browser does not support JavaScript, page would not work
+            properly!</noscript
         >
-          <span class="font-display text-xl font-bold tracking-tight"
-            >kapetan</span
-          >
-        </a>
-
+    </head>
+    <body class="bg-white">
         <div
-          class="hidden items-center gap-7 text-sm font-semibold text-amber-800/70 md:flex"
+            class="bg-amber-900 px-5 py-2 text-center text-xs font-semibold tracking-wide text-white"
         >
-          <a class="transition hover:text-amber-900" href="../menu/">menu</a>
-          <a class="transition hover:text-amber-900" href="../gallery/"
-            >gallery</a
-          >
-          <a class="transition text-amber-900 font-bold" href="./">about</a>
+            this is a demonstration website, no functions are working as of now
+            and we don't plan on implementing it.
         </div>
 
-        <div
-          class="flex items-center gap-2 text-sm font-semibold text-amber-800/70"
-        >
-          <a class="transition hover:text-amber-900" href="../login/">login</a>
-        </div>
-      </nav>
-    </header>
-
-    <main class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-24">
-      <div class="grid items-center gap-12 lg:grid-cols-2">
-        <div class="text-center lg:text-left">
-          <span
-            class="text-sm font-bold tracking-wider text-amber-600 lowercase"
-            >Our Story</span
-          >
-          <h1
-            class="mt-3 text-5xl font-extrabold tracking-tight text-amber-950 sm:text-6xl"
-          >
-            brewed with passion,
-            <span class="block text-amber-600"
-              >rooted in <span class="underline">manila</span>.</span
+        <header class="sticky top-0 z-40 bg-amber-100/95 backdrop-blur-xl">
+            <nav
+                class="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-4 sm:px-8 lg:px-10"
             >
-          </h1>
+                <a
+                    href="../#top"
+                    class="transition flex shrink-0 items-center gap-3 text-amber-800/70 hover:text-amber-900"
+                >
+                    <span class="font-display text-xl font-bold tracking-tight"
+                        >kapetan</span
+                    >
+                </a>
 
-          <p class="mt-6 max-w-xl text-lg leading-relaxed text-stone-600">
-            founded in 2026, <strong>kapetan</strong> started with a simple
-            vision: to elevate the everyday filipino coffee experience. we
-            source premium beans directly from local and international growers,
-            ensuring every cup pays homage to the hard work of traditional
-            farmers.
-          </p>
+                <div
+                    class="hidden items-center gap-7 text-sm font-semibold text-amber-800/70 md:flex"
+                >
+                    <a class="transition hover:text-amber-900" href="../menu/"
+                        >menu</a
+                    >
+                    <a
+                        class="transition hover:text-amber-900"
+                        href="../gallery/"
+                        >gallery</a
+                    >
+                    <a class="transition text-amber-900 font-bold" href="./"
+                        >about</a
+                    >
+                </div>
 
-          <p class="mt-4 max-w-xl text-lg leading-relaxed text-stone-600">
-            whether you are looking for a morning jolt, a quiet space to study
-            for your projects, or a cozy corner to connect with friends, we
-            craft space and flavor uniquely for you.
-          </p>
-        </div>
+                <div
+                    class="flex items-center gap-2 text-sm font-semibold text-amber-800/70"
+                >
+                    <a class="transition hover:text-amber-900" href="../login/"
+                        >login</a
+                    >
+                </div>
+            </nav>
+        </header>
 
-        <div class="relative">
-          <div class="absolute -inset-4 rounded-3xl bg-amber-100/50"></div>
-          <img
-            src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb"
-            alt="Our Cozy Cafe Space"
-            class="relative w-full rounded-3xl object-cover shadow-2xl h-[450px]"
-          />
-        </div>
-      </div>
-    </main>
+        <main class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-24">
+            <div class="grid items-center gap-12 lg:grid-cols-2">
+                <div class="text-center lg:text-left">
+                    <span
+                        class="text-sm font-bold tracking-wider text-amber-600 lowercase"
+                        >Our Story</span
+                    >
+                    <h1
+                        class="mt-3 text-5xl font-extrabold tracking-tight text-amber-950 sm:text-6xl"
+                    >
+                        brewed with passion,
+                        <span class="block text-amber-600"
+                            >rooted in
+                            <span class="underline">manila</span>.</span
+                        >
+                    </h1>
 
-    <section class="bg-amber-900 py-20 text-white">
-      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-        <div class="mx-auto max-w-3xl text-center">
-          <h2 class="text-4xl font-extrabold tracking-tight sm:text-5xl">
-            what keeps us brewing
-          </h2>
-          <p class="mt-4 text-lg text-amber-100">
-            we hold our standards high so your coffee mugs can stay full of
-            genuine flavor.
-          </p>
-        </div>
+                    <p
+                        class="mt-6 max-w-xl text-lg leading-relaxed text-stone-600"
+                    >
+                        founded in 2026, <strong>kapetan</strong> started with a
+                        simple vision: to elevate the everyday filipino coffee
+                        experience. we source premium beans directly from local
+                        and international growers, ensuring every cup pays
+                        homage to the hard work of traditional farmers.
+                    </p>
 
-        <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div
-            class="bg-amber-950/40 p-8 rounded-3xl border border-amber-800/60 transition hover:scale-105 duration-300"
-          >
-            <div class="text-amber-400 text-3xl mb-4">
-              <i class="bi bi-heart-fill"></i>
+                    <p
+                        class="mt-4 max-w-xl text-lg leading-relaxed text-stone-600"
+                    >
+                        whether you are looking for a morning jolt, a quiet
+                        space to study for your projects, or a cozy corner to
+                        connect with friends, we craft space and flavor uniquely
+                        for you.
+                    </p>
+                </div>
+
+                <div class="relative">
+                    <div
+                        class="absolute -inset-4 rounded-3xl bg-amber-100/50"
+                    ></div>
+                    <img
+                        src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb"
+                        alt="Our Cozy Cafe Space"
+                        class="relative w-full rounded-3xl object-cover shadow-2xl h-[450px]"
+                    />
+                </div>
             </div>
-            <h3 class="text-xl font-bold text-white mb-2">quality first</h3>
-            <p class="text-stone-300 text-sm leading-relaxed">
-              from meticulous bean selection to exact espresso extraction
-              parameters, we never compromise on the final cup.
-            </p>
-          </div>
+        </main>
 
-          <div
-            class="bg-amber-950/40 p-8 rounded-3xl border border-amber-800/60 transition hover:scale-105 duration-300"
-          >
-            <div class="text-amber-400 text-3xl mb-4">
-              <i class="bi bi-people-fill"></i>
+        <section class="bg-amber-900 py-20 text-white">
+            <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+                <div class="mx-auto max-w-3xl text-center">
+                    <h2
+                        class="text-4xl font-extrabold tracking-tight sm:text-5xl"
+                    >
+                        what keeps us brewing
+                    </h2>
+                    <p class="mt-4 text-lg text-amber-100">
+                        we hold our standards high so your coffee mugs can stay
+                        full of genuine flavor.
+                    </p>
+                </div>
+
+                <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div
+                        class="bg-amber-950/40 p-8 rounded-3xl border border-amber-800/60 transition hover:scale-105 duration-300"
+                    >
+                        <div class="text-amber-400 text-3xl mb-4">
+                            <i class="bi bi-heart-fill"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">
+                            quality first
+                        </h3>
+                        <p class="text-stone-300 text-sm leading-relaxed">
+                            from meticulous bean selection to exact espresso
+                            extraction parameters, we never compromise on the
+                            final cup.
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-amber-950/40 p-8 rounded-3xl border border-amber-800/60 transition hover:scale-105 duration-300"
+                    >
+                        <div class="text-amber-400 text-3xl mb-4">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">
+                            community center
+                        </h3>
+                        <p class="text-stone-300 text-sm leading-relaxed">
+                            we aim to be more than a shop. KapeTan is a
+                            neighborhood anchor where community conversations
+                            flow freely.
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-amber-950/40 p-8 rounded-3xl border border-amber-800/60 transition hover:scale-105 duration-300 sm:col-span-2 lg:col-span-1"
+                    >
+                        <div class="text-amber-400 text-3xl mb-4">
+                            <i class="bi bi-globe"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">
+                            sustainably minded
+                        </h3>
+                        <p class="text-stone-300 text-sm leading-relaxed">
+                            by partnering directly with local growers, we keep
+                            our supply lines transparent and support ethical
+                            farming.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <h3 class="text-xl font-bold text-white mb-2">community center</h3>
-            <p class="text-stone-300 text-sm leading-relaxed">
-              we aim to be more than a shop. KapeTan is a neighborhood anchor
-              where community conversations flow freely.
-            </p>
-          </div>
+        </section>
 
-          <div
-            class="bg-amber-950/40 p-8 rounded-3xl border border-amber-800/60 transition hover:scale-105 duration-300 sm:col-span-2 lg:col-span-1"
-          >
-            <div class="text-amber-400 text-3xl mb-4">
-              <i class="bi bi-globe"></i>
+        <section class="bg-stone-50 py-20">
+            <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2
+                        class="text-4xl font-extrabold tracking-tight text-amber-950 sm:text-5xl"
+                    >
+                        meet the baristas
+                    </h2>
+                    <p class="mt-4 text-lg text-stone-600">
+                        the passionate team turning green coffee beans into
+                        magic daily.
+                    </p>
+                </div>
+
+                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div
+                        class="bg-white rounded-3xl overflow-hidden shadow-md border border-amber-100"
+                    >
+                        <img
+                            src="https://imgs.search.brave.com/SVNIsDBBI5xs5NzKTLt8csVCQcy3pz_6Df22oMb_jNU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wZW9w/bGUuY29tL3RobWIv/R1ZNOU10S0ZsdXV4/MEZzaGU2bEVfUE1h/ODhNPS8xNTAweDAv/ZmlsdGVyczpub191/cHNjYWxlKCk6bWF4/X2J5dGVzKDE1MDAw/MCk6c3RyaXBfaWNj/KCk6Zm9jYWwoNzA1/eDI4NDo3MDd4Mjg2/KS9OQ1QtTWFyay1M/ZWUtQ29uZmVkZXJh/dGUtZmxhZy10LXNo/aXJ0LTA2MjQyNi1B/Uy00LWM2MzE1NmFm/OWNiNjRjMzA5N2Rj/YzA1YTI4ZGEzODE0/LmpwZw"
+                        />
+                        <div class="p-6 text-center">
+                            <h4 class="font-bold text-xl text-amber-950">
+                                lee min-hyung
+                            </h4>
+                            <p
+                                class="text-amber-600 text-sm font-semibold mt-1"
+                            >
+                                head roaster, ceo & founder
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-3xl overflow-hidden shadow-md border border-amber-100"
+                    >
+                        <img
+                            src="https://imgs.search.brave.com/u55Hxfmw-BfnzOkluF3BZn1Eba-yCPqBcOFPmfPe2o0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pZG9s/aW5zaWdodHMuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI2/LzA2L2tleXZlYXR6/LW1lbWJlci1raW0t/eXVuYS53ZWJw"
+                            alt="Lead Latte Artisan"
+                            class="w-full h-64 object-cover"
+                        />
+                        <div class="p-6 text-center">
+                            <h4 class="font-bold text-xl text-amber-950">
+                                kim yu-na
+                            </h4>
+                            <p
+                                class="text-amber-600 text-sm font-semibold mt-1"
+                            >
+                                lead latte artisan
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-3xl overflow-hidden shadow-md border border-amber-100 sm:col-span-2 lg:col-span-1"
+                    >
+                        <img
+                            src="https://imgs.search.brave.com/WgcrdBiQ6CDKGUfWEEzdmbOiWRzZIc6Mp4c_oTIohHk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9rcHJv/ZmlsZXMuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI1LzAy/L1NhdmVDbGlwLkFw/cF82NzQ1NTE2MTVf/MTg1ODEwMDc5ODgw/MjA2ODZfMTQ5NzY0/NzI2Njg4ODk1ODQx/Nl9uLTU5NHg4MDAu/anBn"
+                            alt="Operations"
+                            class="w-full h-64 object-cover"
+                        />
+                        <div class="p-6 text-center">
+                            <h4 class="font-bold text-xl text-amber-950">
+                                um ji won
+                            </h4>
+                            <p
+                                class="text-amber-600 text-sm font-semibold mt-1"
+                            >
+                                operations manager
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h3 class="text-xl font-bold text-white mb-2">
-              sustainably minded
-            </h3>
-            <p class="text-stone-300 text-sm leading-relaxed">
-              by partnering directly with local growers, we keep our supply
-              lines transparent and support ethical farming.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section class="bg-stone-50 py-20">
-      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <h2
-            class="text-4xl font-extrabold tracking-tight text-amber-950 sm:text-5xl"
-          >
-            meet the baristas
-          </h2>
-          <p class="mt-4 text-lg text-stone-600">
-            the passionate team turning green coffee beans into magic daily.
-          </p>
-        </div>
+        <footer class="bg-stone-50">
+            <div
+                class="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:px-8 md:grid-cols-3 lg:px-10"
+            >
+                <div class="pr-24">
+                    <a
+                        href="../"
+                        class="flex items-center gap-3 text-amber-900"
+                    >
+                        <span class="text-xl font-bold tracking-tight">
+                            kapetan
+                        </span>
+                    </a>
 
-        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div
-            class="bg-white rounded-3xl overflow-hidden shadow-md border border-amber-100"
-          >
-            <img
-              src="https://imgs.search.brave.com/SVNIsDBBI5xs5NzKTLt8csVCQcy3pz_6Df22oMb_jNU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wZW9w/bGUuY29tL3RobWIv/R1ZNOU10S0ZsdXV4/MEZzaGU2bEVfUE1h/ODhNPS8xNTAweDAv/ZmlsdGVyczpub191/cHNjYWxlKCk6bWF4/X2J5dGVzKDE1MDAw/MCk6c3RyaXBfaWNj/KCk6Zm9jYWwoNzA1/eDI4NDo3MDd4Mjg2/KS9OQ1QtTWFyay1M/ZWUtQ29uZmVkZXJh/dGUtZmxhZy10LXNo/aXJ0LTA2MjQyNi1B/Uy00LWM2MzE1NmFm/OWNiNjRjMzA5N2Rj/YzA1YTI4ZGEzODE0/LmpwZw"
-            />
-            <div class="p-6 text-center">
-              <h4 class="font-bold text-xl text-amber-950">lee min-hyung</h4>
-              <p class="text-amber-600 text-sm font-semibold mt-1">
-                head roaster, ceo & founder
-              </p>
+                    <p class="mt-5 max-w-sm leading-7 text-stone-600">
+                        serving freshly brewed coffee, handcrafted drinks, and
+                        café favorites for every coffee lover.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-amber-900">explore</h3>
+
+                    <div class="mt-4 space-y-3 text-sm text-stone-600">
+                        <a
+                            class="block transition hover:text-amber-700"
+                            href="../menu/"
+                        >
+                            menu
+                        </a>
+
+                        <a
+                            class="block transition hover:text-amber-700"
+                            href="../gallery/"
+                        >
+                            gallery
+                        </a>
+
+                        <a
+                            class="block transition hover:text-amber-700"
+                            href="./"
+                        >
+                            about us
+                        </a>
+
+                        <a
+                            class="block transition hover:text-amber-700"
+                            href="../login/"
+                        >
+                            login
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-amber-900">contact us</h3>
+
+                    <div
+                        class="mt-4 space-y-3 text-sm leading-6 text-stone-600"
+                    >
+                        <p>manila, philippines</p>
+
+                        <p>
+                            everyday (excluding holidays)<br />
+                            6:00 am to 9:00 pm
+                        </p>
+
+                        <p>(+63) 912 345 6789</p>
+                    </div>
+                </div>
             </div>
-          </div>
 
-          <div
-            class="bg-white rounded-3xl overflow-hidden shadow-md border border-amber-100"
-          >
-            <img
-              src="https://imgs.search.brave.com/u55Hxfmw-BfnzOkluF3BZn1Eba-yCPqBcOFPmfPe2o0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pZG9s/aW5zaWdodHMuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI2/LzA2L2tleXZlYXR6/LW1lbWJlci1raW0t/eXVuYS53ZWJw"
-              alt="Lead Latte Artisan"
-              class="w-full h-64 object-cover"
-            />
-            <div class="p-6 text-center">
-              <h4 class="font-bold text-xl text-amber-950">kim yu-na</h4>
-              <p class="text-amber-600 text-sm font-semibold mt-1">
-                lead latte artisan
-              </p>
+            <div class="border-t border-amber-200 bg-amber-100">
+                <div
+                    class="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-sm text-amber-900 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10"
+                >
+                    <p>
+                        © 2026 <span class="font-semibold">kapeTan</span>. all
+                        rights reserved.
+                    </p>
+
+                    <p>a project of bsit wma - tw01 ☕</p>
+                </div>
             </div>
-          </div>
-
-          <div
-            class="bg-white rounded-3xl overflow-hidden shadow-md border border-amber-100 sm:col-span-2 lg:col-span-1"
-          >
-            <img
-              src="https://imgs.search.brave.com/WgcrdBiQ6CDKGUfWEEzdmbOiWRzZIc6Mp4c_oTIohHk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9rcHJv/ZmlsZXMuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI1LzAy/L1NhdmVDbGlwLkFw/cF82NzQ1NTE2MTVf/MTg1ODEwMDc5ODgw/MjA2ODZfMTQ5NzY0/NzI2Njg4ODk1ODQx/Nl9uLTU5NHg4MDAu/anBn"
-              alt="Operations"
-              class="w-full h-64 object-cover"
-            />
-            <div class="p-6 text-center">
-              <h4 class="font-bold text-xl text-amber-950">um ji won</h4>
-              <p class="text-amber-600 text-sm font-semibold mt-1">
-                operations manager
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="bg-stone-50">
-      <div
-        class="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:px-8 md:grid-cols-3 lg:px-10"
-      >
-        <div class="pr-24">
-          <a href="../" class="flex items-center gap-3 text-amber-900">
-            <span class="text-xl font-bold tracking-tight"> kapetan </span>
-          </a>
-
-          <p class="mt-5 max-w-sm leading-7 text-stone-600">
-            serving freshly brewed coffee, handcrafted drinks, and café
-            favorites for every coffee lover.
-          </p>
-        </div>
-
-        <div>
-          <h3 class="font-semibold text-amber-900">explore</h3>
-
-          <div class="mt-4 space-y-3 text-sm text-stone-600">
-            <a class="block transition hover:text-amber-700" href="../menu/">
-              menu
-            </a>
-
-            <a class="block transition hover:text-amber-700" href="../gallery/">
-              gallery
-            </a>
-
-            <a class="block transition hover:text-amber-700" href="./">
-              about us
-            </a>
-
-            <a class="block transition hover:text-amber-700" href="../login/">
-              login
-            </a>
-          </div>
-        </div>
-
-        <div>
-          <h3 class="font-semibold text-amber-900">contact us</h3>
-
-          <div class="mt-4 space-y-3 text-sm leading-6 text-stone-600">
-            <p>manila, philippines</p>
-
-            <p>
-              everyday (excluding holidays)<br />
-              6:00 am to 9:00 pm
-            </p>
-
-            <p>(+63) 912 345 6789</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="border-t border-amber-200 bg-amber-100">
-        <div
-          class="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-sm text-amber-900 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10"
-        >
-          <p>
-            © 2026 <span class="font-semibold">kapeTan</span>. all rights
-            reserved.
-          </p>
-
-          <p>a project of bsit wma - tw01 ☕</p>
-        </div>
-      </div>
-    </footer>
-  </body>
+        </footer>
+    </body>
 </html>
