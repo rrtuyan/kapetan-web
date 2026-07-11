@@ -2,7 +2,7 @@
   "version": "db5dcd0f61ecd507dca125de836b9b4e",
   "products": [
     {
-      "productHash": "cafe_latte",
+      "productHash": "4404ca87004c3434da458f747f972849",
       "productImageURL": "https://plus.unsplash.com/premium_photo-1674327105076-36c4419864cf",
       "productName": "Cafe Latte",
       "productDescription": "A standard latte",
@@ -26,7 +26,7 @@
       ]
     },
     {
-      "productHash": "cinnamon_latte",
+      "productHash": "6fb56f1db0374b3e179fc789fef01e96",
       "productImageURL": "https://images.unsplash.com/photo-1559001724-fbad036dbc9e",
       "productName": "Cinnamon Latte",
       "productDescription": "A standard latte with a hint of cinnamon.",
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "productHash": "hazelnut_latte",
+      "productHash": "b3eae5a69993edd7f8059e5b1d7487f5",
       "productImageURL": "https://images.unsplash.com/photo-1603374399574-4cf3f4d79d34",
       "productName": "Hazelnut Latte",
       "productDescription": "A creamy, chocolate-hazelnutty latte.",
